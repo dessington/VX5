@@ -9,7 +9,6 @@
 - Fast, quiet boot to desktop (disable for troubleshooting)
 - Flatpak ready (just double-click flatpakref files)
 - Optional desktop transparency & effects
-- Network synchronisation with chrony
 - 14 services & 260MB idle usage
 
 # Extras
