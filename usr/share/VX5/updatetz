@@ -1,0 +1,5 @@
+#!/bin/bash
+tzupdate
+echo "Timezone updated"
+echo ""
+sleep 3
