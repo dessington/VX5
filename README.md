@@ -6,6 +6,7 @@
 - Highly optimised light core
 - Use as a LiveCD or light base to build up from
 - Optimised VM settings for multitasking and desktop usage
+- Modular system for adding just what you need (bluetooth, printing, etc)
 - Fast, quiet boot to desktop (disable for troubleshooting)
 - Flatpak ready (just double-click flatpakref files)
 - Optional desktop transparency & effects
