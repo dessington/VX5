@@ -17,5 +17,5 @@
 - 3rd-party installers (Brave, Chrome, Steam & Virtualbox currently included)
 
 # 2 Editions
-- Core: No firmware. Ideal for older computers on eth0.
-- Firmware: Includes wifi and other general firmware.
+- Core: No firmware, no software.
+- Pro: Includes firmware and software
