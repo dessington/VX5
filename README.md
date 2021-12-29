@@ -7,12 +7,10 @@
 - Use as a LiveCD or light base to build up from
 - Optimised VM settings for multitasking and desktop usage
 - Fast, quiet boot to desktop (disable for troubleshooting)
-- Flatpak ready (just double-click flatpakref files)
 - Optional desktop transparency & effects
-- 14 services & 260MB idle usage
 
 # Extras
-- Modular system to add just what you need (bluetooth, printers, etc)
+- Modular system to add just what you need (bluetooth, flatpak, printers, etc)
 - Assistant scripts to automate system tasks (autologin, grub, etc)
 - 3rd-party installers (Brave, Chrome, Steam & Virtualbox currently included)
 
