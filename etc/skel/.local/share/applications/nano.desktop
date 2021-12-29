@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=nano
+Comment=
+Exec=xfce4-terminal -e 'nano %f'
+Icon=accessories-text-editor
+Path=
+Terminal=false
+StartupNotify=false
+NoDisplay=true

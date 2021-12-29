@@ -1,0 +1,7 @@
+[Default Applications]
+application/x-shellscript=Run as Root.desktop
+text/plain=nano.desktop;
+
+[Added Associations]
+application/x-shellscript=Run as Root.desktop;
+text/plain=nano.desktop;

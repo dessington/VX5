@@ -1,0 +1,10 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+xbps-install -Syv void-repo-multilib
+xbps-install -Syv libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit mesa-dri-32bit
+xbps-install -Syu mono steam
+
+su -g wheel $_user -c 'steam &'
+exit

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+archivename=$(date +"%Y-%m-%d-%H%M")
+
+clear
+echo "Backup OS" ; sleep 1
+echo "[1/3] Full system clean" ; sleep 2
+/usr/share/VX5/clean/purge-old-kernels
+/usr/share/VX5/clean/remove-unused-packages
+/usr/share/VX5/clean/purge-xbps-cache >/dev/null 2>&1
+echo ""
+
+echo "[2/3] Save old uuid" ; sleep 2
+cd /
+installdrv=$(df -hT | grep /$ | cut -d " " -f 1)
+findmnt $installdrv -o UUID -n > olduuid
+echo "UUID saved"
+cat /olduuid ; sleep 2
+echo ""
+
+echo "[3/3] Create archive" ; sleep 2
+cd /home/$_user
+tar -cpvzf $HOSTNAME-$archivename.fs.tar.gz --exclude=home/$_user/.local/share/Trash --exclude=run/media --exclude=var/cache/xbps --exclude=home/$_user/$HOSTNAME-$archivename.fs.tar.gz --one-file-system /
+chown $_user:$_user /home/$_user/$HOSTNAME-$archivename.fs.tar.gz
+sleep 1
+echo ""
+
+echo "Backup complete"
+echo "Syncing.."
+sync
+echo "Sync complete"
+echo ""
+
+echo "Exiting"
+sleep 1
+exit

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>tools-media-optical-format</icon>
+	<name>IMG &gt; HDD</name>
+	<unique-id>1640282466491190-1</unique-id>
+	<command>xfce4-terminal -e &apos;sudo /usr/share/VX5/.actions/img2hdd %f&apos;</command>
+	<description></description>
+	<patterns>*.img</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>tools-media-optical-format</icon>
+	<name>ISO  &gt;  USB</name>
+	<unique-id>1615365851139586-1</unique-id>
+	<command>xfce4-terminal -e &apos;sudo /usr/share/VX5/.actions/iso2usb %f&apos;</command>
+	<description></description>
+	<patterns>*.iso</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>tools-media-optical-format</icon>
+	<name>Mount ISO</name>
+	<unique-id>1611257978866652-4</unique-id>
+	<command>udisksctl loop-setup -f %f</command>
+	<description></description>
+	<patterns>*.iso</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>cm_runterm</icon>
+	<name>Open Terminal</name>
+	<unique-id>1619677086307084-1</unique-id>
+	<command>xfce4-terminal --working-directory=%f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+</actions>

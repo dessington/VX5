@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Icon=desktop
+NoDisplay=true
+Exec=xfce4-terminal -e 'sudo %f'
+Name=Run script
+GenericName=Terminal

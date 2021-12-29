@@ -1,0 +1,23 @@
+[org/gnome/desktop/interface]
+icon-theme='Newaita-reborn-gray'
+gtk-theme='Material-VX5'
+font-name='Sans 7'
+monospace-font-name='Monospace 8'
+
+[org/gnome/nm-applet]
+disable-connected-notifications=true
+disable-disconnected-notifications=true
+
+[org/gtk/settings/file-chooser]
+window-position=(575, 297)
+window-size=(720, 400)
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'

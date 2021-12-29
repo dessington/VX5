@@ -1,0 +1,17 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+braveinstall=$(mktemp -d)
+cd $braveinstall
+wget https://github.com/brave/brave-browser/releases/download/v1.33.106/brave-browser-1.33.106-1.x86_64.rpm
+rpm2cpio brave-browser-1.33.106-1.x86_64.rpm | cpio -idmv
+cp -r etc opt usr /
+cp /usr/share/applications/brave-browser.desktop /home/$_user/Desktop
+chmod +x /home/$_user/Desktop/brave-browser.desktop
+chown $_user: /home/$_user/Desktop/brave-browser.desktop
+echo ""
+
+echo "Installation complete"
+sleep 3
+exit

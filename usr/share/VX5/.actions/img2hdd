@@ -1,0 +1,19 @@
+#!/bin/bash
+
+clear
+echo "img2hdd"
+echo ""
+lsblk -o NAME,SIZE,MOUNTPOINT
+echo ""
+read -p "Target drive (sdx): " targetdrive
+echo ""
+
+dd if=$1 of=/dev/$targetdrive status=progress
+echo ""
+
+echo "Syncing.."
+sync
+echo "Syncing complete"
+echo "Exiting"
+sleep 2
+exit

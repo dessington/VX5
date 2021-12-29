@@ -1,0 +1,14 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+rfkill unblock bluetooth
+xbps-install -Syu blueman bluez bluez-alsa bluez-cups
+ln -s /etc/sv/bluetoothd /var/service
+usermod -aG bluetooth $_user
+
+echo ""
+echo "Installation complete"
+echo "$_user added to bluetooth group"
+sleep 2
+

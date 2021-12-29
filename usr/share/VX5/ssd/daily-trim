@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cat << EOF > /etc/cron.daily/fstrim
+#!/bin/bash
+SSD_MOUNT_POINTS='/'
+for mount_point in 
+do
+    fstrim 
+done
+EOF
+
+chmod +x /etc/cron.daily/fstrim
+echo "Daily trim enabled on root"
+echo ""
+sleep 3

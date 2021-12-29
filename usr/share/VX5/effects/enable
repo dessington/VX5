@@ -1,0 +1,17 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+cd /home/$_user/.config
+sed -i "s/background_color = #1b2026 100/background_color = #1b2026 90/g" /home/$_user/.config/tint2/tint2rc
+sed -i "s/color_menu_bg = #1b2026 100/color_menu_bg = #1b2026 90/g" /home/$_user/.config/jgmenu/jgmenurc
+sed -i "s/BackgroundDarkness=.*/BackgroundDarkness=0.900000/g" /home/$_user/.config/xfce4/terminal/terminalrc
+sed -i "s,frame_opacity.*,frame_opacity\" type=\"int\" value=\"90\"\/\>,g" /home/$_user/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+sed -i "s,popup_opacity.*,frame_opacity\" type=\"int\" value=\"90\"\/\>,g" /home/$_user/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+chown $_user:$_user -R /home/$_user
+
+echo "Effects enabled, ENTER to relog"
+echo ""
+
+read
+loginctl terminate-user $_user

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+xbps-install -Syu flatpak xdg-desktop-portal
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+echo ""
+echo "Flatpak activated"
+sleep 3
+read

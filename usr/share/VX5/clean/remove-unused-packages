@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xbps-remove -ROo
+echo "Packages cleaned"
+sleep 3

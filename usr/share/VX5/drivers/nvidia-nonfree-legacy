@@ -1,0 +1,9 @@
+#!/bin/bash
+
+xbps-install -Syu void-repo-nonfree
+xbps-install -Syu nvidia390
+
+echo ""
+echo "Installation complete"
+sleep 2
+

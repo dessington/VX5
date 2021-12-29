@@ -1,0 +1,15 @@
+#!/bin/bash
+
+xbps-install -Syu intel-media-driver intel-video-accel linux-firmware-intel mesa-intel-dri mesa-vulkan-intel vulkan-loader
+
+mkdir -pv /etc/X11/xorg.conf.d
+cat << EOF > /etc/X11/xorg.conf.d/20-intel.conf
+Section "Device"
+	Identifier "Intel Graphics"
+	Driver "modesetting"
+EndSection
+EOF
+
+echo ""
+echo "Installation complete"
+sleep 3

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+xbps-install -Syu void-repo-nonfree
+xbps-install -Syu foomatic-db foomatic-db-nonfree
+
+echo ""
+echo "Installation complete"
+sleep 3

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+flatpak install org.freedesktop.Platform/x86_64/21.08 org.freedesktop.Platform.GL.default/x86_64/21.08 org.freedesktop.Platform.Locale/x86_64/21.08 org.freedesktop.Platform.openh264/x86_64/2.0
+
+echo ""
+echo "Downloads complete"
+sleep 3
+read

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Volume Control
+Comment=
+Exec=xfce4-terminal -e 'alsamixer'
+Icon=multimedia-volume-control
+Path=
+Terminal=false
+StartupNotify=false
+Categories=Settings;

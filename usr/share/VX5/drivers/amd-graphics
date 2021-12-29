@@ -1,0 +1,8 @@
+#!/bin/bash
+
+xbps-install -Syu amdvlk linux-firmware-amd mesa-vaapi mesa-vdpau mesa-vulkan-radeon vulkan-loader xf86-video-amdgpu xf86-video-ati
+
+echo ""
+echo "Installation complete"
+sleep 2
+

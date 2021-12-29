@@ -1,0 +1,8 @@
+#!/bin/bash
+
+xbps-install -Syu alsa-firmware alsa-lib alsa-plugins apulse
+
+echo ""
+echo "Installation complete"
+sleep 2
+

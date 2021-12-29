@@ -1,0 +1,9 @@
+#!/bin/bash
+
+xbps-install -Syu hplip
+
+echo ""
+echo "Installation complete, HP setup will follow.."
+sleep 2
+
+hp-setup -i

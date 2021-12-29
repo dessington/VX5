@@ -1,0 +1,4 @@
+#!/bin/bash
+
+activeconnection="$(ip addr show | awk '/inet.*brd/{print $NF; exit}')"
+iftop -i $activeconnection

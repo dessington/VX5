@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Material-VX5
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Material-VX5
+IconTheme=Newaita-reborn-gray
+CursorTheme=Quintom_Ink
+CursorSize=24

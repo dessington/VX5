@@ -1,0 +1,10 @@
+#!/bin/bash
+
+xbps-install -Syu cups cups-filters cups-pk-helper gutenprint
+ln -s /etc/sv/cupsd /var/service
+usermod -aG lp $_user
+
+echo ""
+echo "Installation complete"
+sleep 2
+

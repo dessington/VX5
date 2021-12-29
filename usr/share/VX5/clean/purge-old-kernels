@@ -1,0 +1,5 @@
+#!/bin/bash
+
+vkpurge rm all
+echo "Purge complete"
+sleep 3

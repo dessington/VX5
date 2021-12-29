@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sed -i 's/GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/g' /etc/default/grub
+echo "Updating GRUB.."
+update-grub >/dev/null 2>&1
+echo "GRUB disabled"
+sleep 3
