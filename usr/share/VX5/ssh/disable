@@ -1,0 +1,11 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+xbps-remove -Ry openssh
+rm -r /var/service/sshd
+
+echo ""
+echo "SSH deactivated"
+sleep 2
+

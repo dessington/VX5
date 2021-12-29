@@ -1,0 +1,11 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+xbps-install -Syu openssh
+ln -s /etc/sv/sshd /var/service
+
+echo ""
+echo "SSH activated"
+sleep 2
+
