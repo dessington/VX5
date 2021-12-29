@@ -16,6 +16,7 @@
 - Assistant scripts to automate system tasks (autologin, grub, etc)
 - 3rd-party installers (Brave, Chrome, Steam & Virtualbox currently included)
 
-# 2 Editions
-- Core: No firmware, no software.
+# 3 Editions
+- Core: No firmware, no software
+- Firmware: Firmware included, no software
 - Pro: Includes firmware and software
