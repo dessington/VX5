@@ -1,7 +1,0 @@
-#!/bin/bash
-
-sed -i "s/#HARDWARECLOCK=\"UTC\"/HARDWARECLOCK=\"localtime\"/g" /etc/rc.conf
-
-echo "Local RTC enabled"
-echo ""
-sleep 3
