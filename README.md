@@ -16,7 +16,6 @@
 - Assistant scripts to automate system tasks (autologin, grub, etc)
 - 3rd-party installers (Brave, Chrome, Steam & Virtualbox currently included)
 
-# 3 Editions
+# 2 Editions
 - Core: No firmware. Ideal for older computers on eth0.
 - Firmware: Includes wifi and other general firmware.
-- Pro: Firmware included & all optional modules installed and activated by default (ie. bluetooth, printing, etc)
