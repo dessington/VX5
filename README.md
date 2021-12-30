@@ -11,7 +11,7 @@
 
 # Extras
 - Modular system to add just what you need (bluetooth, flatpak, printers, etc)
-- Assistant scripts to automate system tasks (autologin, grub, etc)
+- Assistant scripts to automate system tasks (autologin, grub, drivers, etc)
 - 3rd-party installers (Brave, Chrome, Steam & Virtualbox currently included)
 
 # 3 Editions
@@ -21,6 +21,8 @@
 
 # Pro Software
 - Archiver: Engrampa
+- Bittorrent client: Transmission
+- Browser: Chromium
 - Document viewer: epdfview
 - Image viewer: feh
 - Multimedia: mpv
