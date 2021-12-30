@@ -21,6 +21,7 @@
 
 # Pro Software
 - Archiver: Engrampa
+- Document viewer: epdfview
 - Image viewer: feh
 - Multimedia: mpv
 - Office suite: Libreoffice
