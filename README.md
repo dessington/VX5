@@ -21,6 +21,7 @@
 
 # Pro Software
 - Archiver: Engrampa
+- Image viewer: feh
 - Multimedia: mpv
 - Office suite: Libreoffice
 - Online radio: pyRadio
