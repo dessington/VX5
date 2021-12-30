@@ -20,10 +20,10 @@
 - Pro: Includes firmware and software
 
 # Pro Software
-Archiver: Engrampa
-Multimedia: mpv
-Office suite: Libreoffice
-Online radio: pyRadio
-Package manager: OctoXBPS
-Partition manager: GParted
-Text editor: Mousepad
+- Archiver: Engrampa
+- Multimedia: mpv
+- Office suite: Libreoffice
+- Online radio: pyRadio
+- Package manager: OctoXBPS
+- Partition manager: GParted
+- Text editor: Mousepad
