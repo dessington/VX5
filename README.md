@@ -1,2 +1,2 @@
 # Discontinued
-Please see https://github.com/VX-Linux/core
+Please see https://github.com/VX-Linux
